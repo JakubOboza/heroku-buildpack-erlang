@@ -22,6 +22,6 @@ if [ ! -e "rebar" ]; then
 fi
 
 message "-----> Building with Rebar"
-./rebar get-deps generate 2>&1 | sed -u 's/^/       /'
+./rebar get-deps compile generate 2>&1 | sed -u 's/^/       /'
 [ "${PIPESTATUS[*]}" = "0 0" ]
 
